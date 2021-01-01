@@ -4,6 +4,12 @@ const logger = require("./logger");
 const server = require("./httpserver");
 const { port } = require("./config");
 require("./db");
+const fs = require("fs");
+
+const dir = "./media";
+if (!fs.existsSync(dir)) {
+  fs.mkdirSync(dir);
+}
 
 server.listen(port, (err) => {
   if (err) {
