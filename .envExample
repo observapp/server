@@ -1,0 +1,7 @@
+PORT=5000
+DB_PWD=dbpwd
+DB_USR=dbusr
+SECRET=secret
+EMAIL=myemail@email.com
+EMAILPWD=emailpwd
+URL=http://localhost:8000
